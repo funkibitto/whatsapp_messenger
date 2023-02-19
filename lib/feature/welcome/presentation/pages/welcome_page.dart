@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_messenger/core/config/styles/app_colors.dart';
 import 'package:whatsapp_messenger/gen/assets.gen.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -11,10 +12,11 @@ class WelcomePage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50),
-              child: Assets.images.circle.image(
-                color: const Color(0xFF00A884),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 50),
+                child: Assets.images.circle.image(color: AppColors.greenDark),
               ),
             ),
           ),
@@ -67,7 +69,7 @@ class WelcomePage extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF00A884),
+                      backgroundColor: AppColors.greenDark,
                       foregroundColor: const Color(0xFF111B21),
                       splashFactory: NoSplash.splashFactory,
                       elevation: 0,
@@ -93,14 +95,19 @@ class WelcomePage extends StatelessWidget {
                         children: const [
                           Icon(
                             Icons.language,
-                            color: Color(0xFF00A884),
+                            color: AppColors.greenDark,
                           ),
                           SizedBox(width: 10),
-                          Text('English'),
+                          Text(
+                            'English',
+                            style: TextStyle(
+                              color: AppColors.greenDark,
+                            ),
+                          ),
                           SizedBox(width: 10),
                           Icon(
                             Icons.keyboard_arrow_down,
-                            color: Color(0xFF00A884),
+                            color: AppColors.greenDark,
                           ),
                         ],
                       ),
