@@ -12,8 +12,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final Color? greyColor;
   final Color? blueColor;
   final Color? langBgColor;
-  final Color? langHightlightColor;
-  final Color? authAppbarTextColor;
+  final Color? langHighlightColor;
+  final Color? authAppBarTextColor;
   final Color? photoIconBgColor;
   final Color? photoIconColor;
   final Color? profilePageBg;
@@ -30,8 +30,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     this.greyColor,
     this.blueColor,
     this.langBgColor,
-    this.langHightlightColor,
-    this.authAppbarTextColor,
+    this.langHighlightColor,
+    this.authAppBarTextColor,
     this.photoIconBgColor,
     this.photoIconColor,
     this.profilePageBg,
@@ -49,8 +49,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     greyColor: AppColors.greyLight,
     blueColor: AppColors.blueLight,
     langBgColor: Color(0xFFF7F8FA),
-    langHightlightColor: Color(0xFFE8E8ED),
-    authAppbarTextColor: AppColors.greenLight,
+    langHighlightColor: Color(0xFFE8E8ED),
+    authAppBarTextColor: AppColors.greenLight,
     photoIconBgColor: Color(0xFFF1F1F1),
     photoIconColor: Color(0xFF9DAAB3),
     profilePageBg: Color(0xFFF7F8FA),
@@ -68,8 +68,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     greyColor: AppColors.greyDark,
     blueColor: AppColors.blueDark,
     langBgColor: Color(0xFF182229),
-    langHightlightColor: Color(0xFF09141A),
-    authAppbarTextColor: Color(0xFFE9EDEF),
+    langHighlightColor: Color(0xFF09141A),
+    authAppBarTextColor: Color(0xFFE9EDEF),
     photoIconBgColor: Color(0xFF283339),
     photoIconColor: Color(0xFF61717B),
     profilePageBg: Color(0xFF0B141A),
@@ -88,8 +88,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     Color? greyColor,
     Color? blueColor,
     Color? langBgColor,
-    Color? langHightlightColor,
-    Color? authAppbarTextColor,
+    Color? langHighlightColor,
+    Color? authAppBarTextColor,
     Color? photoIconBgColor,
     Color? photoIconColor,
     Color? profilePageBg,
@@ -106,8 +106,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       greyColor: greyColor ?? this.greyColor,
       blueColor: blueColor ?? this.blueColor,
       langBgColor: langBgColor ?? this.langBgColor,
-      langHightlightColor: langHightlightColor ?? this.langHightlightColor,
-      authAppbarTextColor: authAppbarTextColor ?? this.authAppbarTextColor,
+      langHighlightColor: langHighlightColor ?? this.langHighlightColor,
+      authAppBarTextColor: authAppBarTextColor ?? this.authAppBarTextColor,
       photoIconBgColor: photoIconBgColor ?? this.photoIconBgColor,
       photoIconColor: photoIconColor ?? this.photoIconColor,
       profilePageBg: profilePageBg ?? this.profilePageBg,
@@ -130,10 +130,10 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       greyColor: Color.lerp(greyColor, other.greyColor, t),
       blueColor: Color.lerp(blueColor, other.blueColor, t),
       langBgColor: Color.lerp(langBgColor, other.langBgColor, t),
-      langHightlightColor:
-          Color.lerp(langHightlightColor, other.langHightlightColor, t),
-      authAppbarTextColor:
-          Color.lerp(authAppbarTextColor, other.authAppbarTextColor, t),
+      langHighlightColor:
+          Color.lerp(langHighlightColor, other.langHighlightColor, t),
+      authAppBarTextColor:
+          Color.lerp(authAppBarTextColor, other.authAppBarTextColor, t),
       photoIconBgColor: Color.lerp(photoIconBgColor, other.photoIconBgColor, t),
       photoIconColor: Color.lerp(photoIconColor, other.photoIconColor, t),
       profilePageBg: Color.lerp(profilePageBg, other.profilePageBg, t),

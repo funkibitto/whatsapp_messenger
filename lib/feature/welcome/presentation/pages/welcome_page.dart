@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_messenger/core/config/styles/app_colors.dart';
+import 'package:whatsapp_messenger/feature/welcome/presentation/widgets/language_button.dart';
 import 'package:whatsapp_messenger/gen/assets.gen.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -16,7 +17,8 @@ class WelcomePage extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: Assets.images.circle.image(color: AppColors.greenDark),
+                child: Assets.images.circle
+                    .image(color: AppColors.greenDark, width: 290, height: 290),
               ),
             ),
           ),
@@ -45,7 +47,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                          text: 'Privacy Policy.',
+                          text: 'Privacy Policy. ',
                           style: TextStyle(
                             color: Color(0xFF53BDEB),
                           ),
@@ -79,41 +81,7 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 50),
-                Material(
-                  color: const Color(0xFF182229),
-                  borderRadius: BorderRadius.circular(20),
-                  child: InkWell(
-                    onTap: () {},
-                    borderRadius: BorderRadius.circular(20),
-                    splashFactory: NoSplash.splashFactory,
-                    highlightColor: const Color(0xFF09141A),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 8),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const [
-                          Icon(
-                            Icons.language,
-                            color: AppColors.greenDark,
-                          ),
-                          SizedBox(width: 10),
-                          Text(
-                            'English',
-                            style: TextStyle(
-                              color: AppColors.greenDark,
-                            ),
-                          ),
-                          SizedBox(width: 10),
-                          Icon(
-                            Icons.keyboard_arrow_down,
-                            color: AppColors.greenDark,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                )
+                const LanguageButton(),
               ],
             ),
           ),
