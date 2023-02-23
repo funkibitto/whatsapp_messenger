@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_messenger/core/config/styles/app_colors.dart';
+import 'package:whatsapp_messenger/core/config/app_colors.dart';
 
 extension ExtendedTheme on BuildContext {
   CustomThemeExtension get theme {

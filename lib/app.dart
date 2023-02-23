@@ -1,7 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_messenger/core/config/router.dart';
-import 'package:whatsapp_messenger/core/config/styles/app_themes.dart';
+import 'package:whatsapp_messenger/core/config/app_themes.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

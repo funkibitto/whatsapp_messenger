@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 /// Styles class holding app color information

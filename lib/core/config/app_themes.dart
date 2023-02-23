@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:whatsapp_messenger/core/config/styles/app_colors.dart';
+import 'package:whatsapp_messenger/core/config/app_colors.dart';
 import 'package:whatsapp_messenger/core/extension/custom_theme_extension.dart';
 
 class AppThemes {
