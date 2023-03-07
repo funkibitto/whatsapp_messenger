@@ -7,7 +7,9 @@ class AppThemes {
   static ThemeData get darkTheme {
     final ThemeData base = ThemeData.dark();
     return base.copyWith(
-      backgroundColor: AppColors.backgroundDark,
+      brightness: Brightness.dark,
+      useMaterial3: true,
+      colorScheme: const ColorScheme.dark(background: AppColors.backgroundDark),
       scaffoldBackgroundColor: AppColors.backgroundDark,
       extensions: [CustomThemeExtension.darkMode],
       appBarTheme: const AppBarTheme(
@@ -77,7 +79,10 @@ class AppThemes {
   static ThemeData get lightTheme {
     final ThemeData base = ThemeData.light();
     return base.copyWith(
-      backgroundColor: AppColors.backgroundLight,
+      brightness: Brightness.light,
+      useMaterial3: true,
+      colorScheme:
+          const ColorScheme.light(background: AppColors.backgroundLight),
       scaffoldBackgroundColor: AppColors.backgroundLight,
       extensions: [CustomThemeExtension.lightMode],
       appBarTheme: const AppBarTheme(

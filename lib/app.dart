@@ -8,9 +8,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(ThemeMode.system);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'WhatsApp Messenger',
+      themeMode: ThemeMode.system,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
       locale: DevicePreview.locale(context),
